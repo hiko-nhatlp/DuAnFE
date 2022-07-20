@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- thẻ trong form  -->
+  <form action="">
+    <label for="">Họ và tên:</label>
+    <input type="text" name="username"> 
+    <!-- thẻ br này có chức năng xuống dòng. -->
+    <div class="div">
+      <p>Sở thích của bạn:</p><br/>
+      <label for="">Bóng đá:</label>
+      <input type="checkbox" name="bongda">
+      <label for="">Học toán:</label>
+      <input type="checkbox" name="hoctoan">
+    </div>
+    <!-- thẻ select -->
+    <label for="">Giới tính:</label>
+    <div class="div">
+      <select name="gioitinh">
+        <option value="1">Nam</option>
+        <option value="2">Nữ</option>
+      </select>
+    </div>
+    <!-- dạng input type radio -->
+    <div class="div">
+      <label for="">Option 1:</label>
+      <input type="radio" name="option" value="option1">
+      <label for="">Option 2:</label>
+      <input type="radio" name="option" value="option2">
+      <label for="">Option 3:</label>
+      <input type="radio" name="option" value="option3">
+    </div>
+    <!-- dạng textarea dùng trong nhập nhiều nội dung -->
+    <textarea name="noidung" id="" cols="30" rows="5"></textarea>
+
+    <!-- Nút button action gì đó... sử dụng button -->
+    <div class="">
+      <button>Liên hệ ngay</button>
+    </div>
+    <!-- class và id trong html -->
+    <!-- class: là ten bạn đặt ra. Mục dích dùng chung để css (style) -->
+    <!-- id: chỉ dùng duy nhất độ ưu tiên style (css) mạnh hơn class -->
+    <div class="wrapper" id="box">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+    </div>
+    <div class="wrapper" id="box1">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+    </div>
+  </form>
+  <style>
+    /* .item {
+      background-color: red;
+    } */
+    .wrapper {
+      background-color: green;
+    }
+    #box {
+      background-color: yellow;
+    }
+  </style>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buổi thứ 1</title>
+</head>
+<style>
+  header div {
+    border: 1px solid red;
+    margin-bottom: 20px;
+  }
+</style>
+<body>
+  <header>
+    <div>logo</div>
+    <div>Menu</div>
+  </header>
+  <div>
+    <h1>Chào các bạn</h1>
+    <h2>Chào các bạn</h2>
+    <h3>Chào các bạn</h3>
+    <h4>Chào các bạn</h4>
+    <h5>Chào các bạn</h5>
+    <h6>Chào các bạn</h6>
+    <p>Thẻ nội dung</p>
+
+    <img src="./assets/images/pic_trulli.jpeg" alt="ảnh thiên nhiên">
+
+    <!-- cách import ảnh dùng dấu ../ -->
+    <!-- ../ đc hiểu là đi ra một cấp. Từ cấp chính nó là (Con) -> (Cha)
+    ./ được hiểu rằng từ thư mục gốc đi vào trong.
+    index. -> assets -> images -> ảnh của bạn muốn lấy -->
+
+    <!-- src: đường dẫn đến file ảnh hoặc file media bạn cần chèn 
+    alt: tên định danh cho ảnh đó. 
+    - lỗi load trang
+    - mất ảnh (Phía server hoặc DB bị lỗi)
+
+    => alt=""  ảnh thiên nhiên -->
+
+
+
+    <!-- thẻ block element 
+    p, div, header footer, main section, ul li 
+
+    thẻ inline block element
+    span b, buttton -->
+
+
+    <!-- Thẻ block nó phải bộc ngoài thẻ inline block  -->
+
+    <div>
+      <strong></strong> 
+      <!-- strong là thẻ in đậm chữ -->
+      <!-- thẻ i (em) là thẻ in nghiêng chữ -->
+      <p>Thẻ block nó <em>phải</em> <strong>bộc ngoài</strong> <i>thẻ inline block</i></p>
+    </div>
+
+
+
+    <h3>List item</h3>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <h3>Thẻ link</h3>
+      <p>Thẻ đoạn văn bản</p>
+      <a href="">link Data</a>
+      <a href="https://genetic.com.vn" target="_blank">
+        Genetic Đà Nẵng
+      </a>
+      <!-- href: là đường dẫn tới 1 nơi nào đó. ví dụ google.com -->
+
+  </div>
+
+  <footer>
+    Địa chỉ
+    Số điện thoại 
+    Gmail
+  </footer>
+</body>
+</html>
