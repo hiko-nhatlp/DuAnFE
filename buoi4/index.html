@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table</title>
+</head>
+<style>
+  .wrapper {
+    width: 300px;
+    height: 200px;
+    border: 2px solid red;
+  }
+  .wrapper td, .wrapper th {
+    border: 1px solid #ddd;
+  }
+  /* #table-status .first {
+    background-color: green;
+  } */
+  /* .wrapper tr:first-child,
+  .wrapper tr:nth-child(3)
+  {
+    background-color: red;
+    color: white;
+  } */
+  .wrapper tr:nth-child(2n + 1) {
+    background-color: black;
+    color: #fff;
+  }
+  /* .wrapper tr:nth-child(2n + 1) td {
+    border-radius: 50px;
+  } */
+  /* top right bottom left */
+  .wrapper tr:nth-child(2n + 1) td {
+    /* border-bottom-left-radius: 5px; */
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    transition: all 1s;
+  }
+  /* hover dùng thay đổi màu sắc hay thuộc tính nào đó khi chúng ta rê chuột vào. */
+  .wrapper tr:nth-child(3) td:hover {
+    color: red;
+    font-size: 30px;
+  }
+  transition
+  /* 2 cách.
+  - đặt class để css
+  - dùng thuộc tính 
+  - first-child lấy item con đầu tiên trong thằng cha.
+  - last-child lấy item con cuối cùng trong thằng cha.
+  - nth-child(60) lấy item tùy ý trong danh sách của cha (table) */
+   
+  /* Nếu là class thì chúng ta dùng .ten-class-do */
+  /* Nếu là id thì chúng ta dùng #ten-id-do */
+  /* Như buổi hôm trước anh có nói. 
+  id mạnh hơn class => Độ ưu tiên của html css trình duyệt load.  */
+</style>
+<body>
+  <div class="wrapper" id="table-status">
+    <table>
+      <!-- tr là 1 dòng -->
+      <!-- td cột trong 1 dòng đó (tr) thường nhập giá trị của cột đó-->
+      <!-- th thể hiện cột nhưng nó thuộc tiêu đề của table đó.  -->
+      <tr class="first">
+        <th>Họ tên</th>
+        <th>Năm sinh</th>
+        <th>Tuổi</th>
+      </tr>
+      <tr>  
+        <td>Tiến</td>
+        <td>2000</td>
+        <td>22</td>
+      </tr>
+      <tr>  
+        <td>Nghĩa</td>
+        <td>2000</td>
+        <td>22</td>
+      </tr>
+      <tr>  
+        <td>Cường</td>
+        <td>2000</td>
+        <td>22</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
