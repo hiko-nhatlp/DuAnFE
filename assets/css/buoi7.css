@@ -1,0 +1,104 @@
+.container {
+  max-width: 1000px;
+  margin: auto;
+  font-family: "Playfair Display";
+}
+.container img {
+  border-radius: 5px;
+}
+.container p {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(165, 163, 163);
+}
+.container a {
+  text-decoration: none;
+  color: #000000;
+}
+.wrapper-title {
+  margin-bottom: 40px;
+}
+.wrapper-title h2 {
+  color: #000;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+.wrapper-blogs {
+  display: flex;
+}
+.blog-left img {
+  max-width: 100%;
+}
+.blog-left {
+  margin-right: 25px;
+}
+.blog-right .item {
+  display: flex;
+  padding: 15px 0;
+  position: relative;
+  /* border-bottom: 2px dotted red; */
+}
+.blog-right .item::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  /* background-color: red; */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: 2px dotted red;
+}
+.blog-right .item .image {
+  width: 150px;
+}
+.blog-right .item .image img {
+  max-width: 100%;
+}
+.blog-right .item h4 {
+  margin: 0 0 8px;
+}
+.blog-right .content {
+  padding-left: 15px;
+  width: calc(100% - 150px);
+}
+.blog-right .item p {
+  margin-bottom: 0;
+}
+.blog-right .item:first-child {
+  padding-top: 0;
+}
+.blog-right .item:last-child::before {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+  .wrapper-blogs {
+    display: block;
+  }
+  .blog-left,
+  .blog-right {
+    width: 100%;
+  }
+  .blog-left {
+    margin-bottom: 60px;
+  }
+  .blog-left img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .blog-right .item {
+    display: block;
+  }
+  .blog-right .item .image,
+  .blog-right .item .content {
+    width: 100%;
+  }
+  .blog-right .item .content {
+    padding: 15px 0 0 0;
+  }
+}

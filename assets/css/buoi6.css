@@ -1,0 +1,47 @@
+.list-data li { 
+  list-style-type: none;
+}
+.list-data li { 
+  position: relative;
+  padding-left: 15px;
+  font-family: 'Playfair Display';
+}
+.list-data li::before { 
+  content: "*";
+  color: red;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  z-index: 2;
+}
+.list-data li::after {
+  content: "$"; 
+  color: green;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  z-index: 1;
+}
+.container {
+  border: 1px solid red;
+  height: 500px;
+}
+.container .list-data {
+  padding-left: 0;
+}
+/* 992px
+475px
+414px
+360px 
+320px */
+/* code cho mobile */
+@media screen and (min-width: 991px) {
+  .list-data li {
+    color: red;
+  }
+}
+@media screen and (max-width: 992px) {
+  .list-data li {
+    color: blue;
+  }
+}
